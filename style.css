@@ -1,0 +1,17 @@
+.dev1{border:1px solid black;
+width:100px;
+height:100px;
+float:left;
+margin-left:10px;}
+.dev2{ clear:both;
+ border:1px solid black;
+width:345px;
+height:100px;
+
+float:buttom;
+}
+.dev3{border:1px solid black;
+width:100px;
+height:100px;
+float:left;
+}

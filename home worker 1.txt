@@ -1,0 +1,10 @@
+make a table with colum 
+1 s.no
+2 name
+3 phone
+4 email
+5 address
+6 city 
+7 gender
+8 age 
+9 date of birth

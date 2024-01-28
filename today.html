@@ -1,0 +1,198 @@
+<!doctype>
+
+<html>
+<head>
+
+<style>
+body{
+background:url('bg2.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+}
+.main{
+border:1px double black;
+padding:5px;
+width:700px;
+margin-left:100px;
+margin-top:100px;
+background:url('bg.jpg');
+background-size:cover;
+}
+.input-box{
+margin:5px;
+margin-top:20px;
+padding:10px;
+box-shadow:0px 0px 1px black;
+}
+label{
+width:200px !important;
+color:blue;
+font-size:18px;
+height:30px;
+
+}
+.input{
+font-size:20px;
+border:none;
+width:400px;
+color:black;
+box-shadow:0px 0px 1px black;
+}
+.submit{
+background:#069;
+color:white;
+font-size:20px;
+border:none;
+}
+.reset{
+background:red;
+color:white;
+font-size:20px;
+border:none;
+}
+h2{
+color:#069;
+text-align:center;
+box-shadow:0px 0px 2px black;
+padding:10px;
+margin:10px;
+
+}
+.input:hover{
+background:red;
+color:white;
+}
+.box, h1, p{
+background:red;
+border:1px solid black;
+width:200px;
+height:200px;
+margin-top:100px;
+transition-duration:1s;
+}
+.box:hover, h1:hover, p:hover{
+background:blue;
+width:400px;
+height:400px;
+}
+h1{
+font-size:20px;
+}
+
+</style>
+
+<script>
+function validate(){
+	var a,name,phone;
+	a=document.forms["signup"]["age"].value;
+	name=document.forms["signup"]["name"].value;
+	phone=document.forms["signup"]["phone"].value;
+	phone = Number(phone);
+	
+	email=document.forms["signup"]["email"].value;
+	
+	if(name.length<5){
+		alert("Correct your name");
+		return false;
+	}
+	
+	if(phone.length<10){
+		alert("Correct your Number");
+		return false;
+	}
+	
+	if(email.length<5){
+		alert("Correct your Email");
+		return false;
+	}
+	
+	
+	if(a<18){
+		alert("You are not eligible for voting");
+		return false;
+	}
+	
+	
+}
+</script>
+
+</head>
+<body>
+<div class="main">
+<h2>Student Registration Form</h2>
+<form name="signup" method="get" action="register.html" onsubmit="return validate()">
+<div class="input-box">
+	<label>Name</label>
+	<input type="text" name="name" placeholder = "Enter your Name" class="input">
+</div>	
+<div class="input-box">
+	<label>Phone No.</label>
+	<input type="number" name="phone" placeholder = "Enter your Phone Number  " class="input">
+</div>	
+<div class="input-box">
+	<label>Age :</label>
+	<input type="number" name="age" placeholder = "Enter your age " class="input">
+</div>
+<div class="input-box">
+	<label>Email : </label>
+	<input type="email" name="email"  class="input" placeholder = "Enter your Email : ">
+</div>	
+<div class="input-box">
+	<label>Address</label>
+	<textarea name="address" placeholder = "Enter your Address " class="input"></textarea>
+</div>	
+<div class="input-box">
+	<label>City</label>
+	<select class="input" name="city">
+		<option value = "">Select city</option>
+		<option value = "varanasi">Varanasi</option>
+		<option value = "delhi">Delhi</option>
+		<option value = "new york">New york</option>
+	</select>
+</div>	
+<div class="input-box">
+	<label>Gender :</label>
+	<input type = "radio" name = "gender"  >Male
+	<input type = "radio" name = "gender">Female
+	<input type = "radio" name = "gender">Other
+</div>	
+<div class="input-box">
+	
+	<label>DOB :</label>
+	<input  type="date" name = "dob"  class="input">
+	<button type="submit" class="submit">Submit</button>
+	<button type="reset"  class="reset">Reset</button>
+	</div>	
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
